@@ -4,7 +4,7 @@ install:
 python:
     - 3.5
 script:
-    - whip_csv observations_data.csv observations_example.yaml index.html -- delimiter ','
+    - whip_csv observations_data.csv observations_example.yaml index.html --delimiter ','
 deploy:
   - provider: pages
     skip_cleanup: true
