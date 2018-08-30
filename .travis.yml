@@ -1,0 +1,14 @@
+language: python
+install:
+    - pip install pywhip
+python:
+    - 3.5
+script:
+    - whip_csv observations_data.csv observations_example.yaml index.html --delimiter ','
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GH_TOKEN
+    on:
+      branch: master
+      python: 3.5
