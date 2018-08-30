@@ -2,7 +2,7 @@
 # Benelux Observations project data file whip specifications
 #
 country:
-   allowed: [BE, NL]
+   allowed: [BE]
 eventDate:
     dateformat: '%Y-%m-%d'
     mindate: 2016-01-01
